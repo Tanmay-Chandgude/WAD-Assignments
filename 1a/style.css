@@ -1,0 +1,67 @@
+body {
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .sidebar {
+    background: #6a1b9a;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .sidebar h2 {
+    padding: 1.5rem 1rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 15px;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card.sales {
+    background: #ff6f61; /* Coral Red */
+  }
+  
+  .card.orders {
+    background: #29b6f6; /* Sky Blue */
+  }
+  
+  .card.customers {
+    background: #66bb6a; /* Mint Green */
+  }
+  
+  .card.revenue {
+    background: #ffca28; /* Amber */
+    color: #212121;
+  }
+  
+  .card h5 {
+    font-weight: 500;
+  }
+  
+  .card h3 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
