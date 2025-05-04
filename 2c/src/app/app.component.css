@@ -1,0 +1,145 @@
+/* Full Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #6a1b9a, #8e24aa); /* Deep purple gradient */
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInBody 1s ease-in;
+}
+
+/* Fade-in animation for body */
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Container Box for Form */
+.form-container {
+  background: linear-gradient(to bottom right, #ffffff, #ffe0f0); 
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slideIn 1s ease forwards;
+}
+
+/* Heading Styling */
+h1 {
+  color: #9c27b0; /* soft purple-pink */
+  margin-bottom: 20px;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #f3b5d0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+  background-color: #fff0f5; /* subtle pink background */
+}
+
+/* Animating inputs with delay */
+input:nth-of-type(1) { animation-delay: 0.2s; }
+input:nth-of-type(2) { animation-delay: 0.4s; }
+input:nth-of-type(3) { animation-delay: 0.6s; }
+input:nth-of-type(4) { animation-delay: 0.8s; }
+input:nth-of-type(5) { animation-delay: 1s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #e91e63;
+  box-shadow: 0 0 8px rgba(233, 30, 99, 0.3);
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  background-color: #e91e63; /* pink */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeInBtn 1.2s ease forwards;
+}
+
+@keyframes fadeInBtn {
+  to {
+    opacity: 1;
+  }
+}
+
+button:hover {
+  background-color: #c2185b; /* darker pink */
+  transform: scale(1.05);
+}
+
+/* Output Section */
+.output {
+  margin-top: 30px;
+  animation: fadeInOutput 1s ease-in-out;
+  text-align: center;
+}
+
+@keyframes fadeInOutput {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+p {
+  font-size: 18px;
+  color: #6a1b9a;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+p:hover {
+  color: #4a148c;
+}
